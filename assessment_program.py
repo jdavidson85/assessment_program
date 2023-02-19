@@ -7,13 +7,13 @@ year = 0
 
 if retire_age > old:
     a = retire_age - old
-    print("Year\tIncome\tSaving Contribution\tTotal Saving")
+    print("\nYear\tIncome\t\tSaving Contribution\t\tTotal Saving")
 
     while year < a:
-        saving_contribution = int((yearly_income*save/100))
-        rising = int((saving*.06))
-        total_Saving = int((saving_contribution+saving+rising))
-        print(year + 1, "\t\t", yearly_income, "\t\t", saving_contribution, "\t\t", total_Saving)
+        saving_contribution = int(yearly_income*save/100)
+        rising = int(saving*.06)
+        total_Saving = int(saving_contribution+saving+rising)
+        print(year + 1, "\t\t", yearly_income, "\t\t", saving_contribution, "\t\t\t\t", total_Saving)
         increase_salary = int((yearly_income + (yearly_income * .03)))
         yearly_income = int(increase_salary)
         saving = int(total_Saving)
